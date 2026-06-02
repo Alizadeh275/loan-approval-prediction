@@ -1,0 +1,70 @@
+|--- credit_score <= 684.50
+|   |--- credit_score <= 549.50
+|   |   |--- class: 0
+|   |--- credit_score >  549.50
+|   |   |--- late_payments_last_year <= 1.50
+|   |   |   |--- credit_score <= 579.50
+|   |   |   |   |--- late_payments_last_year <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- late_payments_last_year >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- credit_score >  579.50
+|   |   |   |   |--- loan_term_months <= 30.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- loan_term_months >  30.00
+|   |   |   |   |   |--- class: 0
+|   |   |--- late_payments_last_year >  1.50
+|   |   |   |--- monthly_income <= 20108152.00
+|   |   |   |   |--- purpose_num <= 4.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- purpose_num >  4.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- monthly_income >  20108152.00
+|   |   |   |   |--- purpose_num <= 1.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- purpose_num >  1.50
+|   |   |   |   |   |--- class: 0
+|--- credit_score >  684.50
+|   |--- loan_term_months <= 18.00
+|   |   |--- loan_amount <= 119334396.00
+|   |   |   |--- monthly_income <= 21817030.00
+|   |   |   |   |--- employment_years <= 17.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- employment_years >  17.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- monthly_income >  21817030.00
+|   |   |   |   |--- age <= 29.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- age >  29.00
+|   |   |   |   |   |--- class: 1
+|   |   |--- loan_amount >  119334396.00
+|   |   |   |--- loan_amount <= 217397824.00
+|   |   |   |   |--- monthly_income <= 28218555.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- monthly_income >  28218555.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- loan_amount >  217397824.00
+|   |   |   |   |--- class: 0
+|   |--- loan_term_months >  18.00
+|   |   |--- credit_score <= 723.50
+|   |   |   |--- credit_score <= 722.50
+|   |   |   |   |--- employment_years <= 7.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- employment_years >  7.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- credit_score >  722.50
+|   |   |   |   |--- age <= 27.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- age >  27.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- credit_score >  723.50
+|   |   |   |--- late_payments_last_year <= 0.50
+|   |   |   |   |--- loan_amount <= 320508976.00
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- loan_amount >  320508976.00
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- late_payments_last_year >  0.50
+|   |   |   |   |--- age <= 59.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- age >  59.50
+|   |   |   |   |   |--- class: 1
