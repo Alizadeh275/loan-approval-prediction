@@ -1,4 +1,3 @@
 /.venv
-seed-db.py
 *.pyc
 *.xlsx
